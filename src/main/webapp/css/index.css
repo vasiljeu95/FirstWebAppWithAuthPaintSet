@@ -4,20 +4,21 @@ body {
     background: linear-gradient(to right, #2b5876, #4e4376);
 }
 
-/*.registration {*/
-/*    text-align: center;*/
+.registration {
+    text-align: center;
 
-/*    margin-top: 50px;*/
-/*    margin-bottom: 50px;*/
-/*}*/
+    /*margin-top: 50px;*/
+    /*margin-bottom: 50px;*/
+}
 
 .content {
     /*background: url(https://images.unsplash.com/photo-1553095066-5014bc7b7f2d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8d2FsbCUyMGJhY2tncm91bmR8ZW58MHx8MHx8&w=1000&q=80) no-repeat;*/
+    text-align: center;
     width: 100%;
     height: 350px;
     padding-top: 250px;
-    padding-right: 30%;
-    padding-left: 40%;
+    /*padding-right: 30%;*/
+    /*padding-left: 40%;*/
     color: white;
     font-size: 30px;
 }
@@ -25,24 +26,29 @@ body {
 .input {
     height: 40px;
     width: 250px;
-    border: 2px solid #b98989;
+    border: 3px solid #b98989;
     font-size: 20px;
     border-radius: 18px;
 }
 
-.input:hover {
-    height: 50px;
-    animation: testAnimation 15s infinite;
-}
+/*.input:hover {*/
+/*    height: 50px;*/
+/*    animation: testAnimation 15s infinite;*/
+/*}*/
 
 #submit {
     margin-top: 20px;
     margin-bottom: 20px;
-    margin-left: 80px;
-    height: 30px;
+    /*margin-left: 80px;*/
+    height: 40px;
+    width: 250px;
+    border: 3px solid #b98989;
+    font-size: 20px;
+    border-radius: 18px;
+    background-color: #7abaff;
 }
 
-a {
-    text-decoration: none;
-    color: yellow;
-}
+/*a {*/
+/*    text-decoration: none;*/
+/*    color: yellow;*/
+/*}*/

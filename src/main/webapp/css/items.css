@@ -1,0 +1,16 @@
+body {
+    background: #2b5876;
+    background: -webkit-linear-gradient(to right, #2b5876, #4e4376);
+    background: linear-gradient(to right, #2b5876, #4e4376);
+}
+
+.product-card {
+    background: #2b5876;
+    background: -webkit-linear-gradient(to right, #2b5876, #4e4376);
+    background: linear-gradient(to right, #2b5876, #4e4376);
+}
+
+.card {
+    color: black;
+}
+

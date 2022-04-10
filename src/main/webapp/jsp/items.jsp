@@ -10,44 +10,153 @@
 
 <!DOCTYPE html>
 <html>
+
 <head>
-    <title>Authentication</title>
+    <meta charset="UTF-8">
     <style>
         <%@ include file='/css/items.css' %>
     </style>
-    <link rel="stylesheet" type="text/css" href="/css/items.css"/>
+    <link rel="stylesheet" type="text/css" href="css/index.css"/>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+    <title>Authentication</title>
 </head>
+
 <body>
 
-<header>
-    <nav>
-        <a href="feedback">Обратная связь</a>
-    </nav>
-</header>
+    <header>
+        <nav>
+            <a href="feedback">Обратная связь</a>
+        </nav>
+    </header>
 
-<div class="success message">
-    <c:if test="${not empty successMessage}">
-        ${successMessage}
-    </c:if>
-</div>
+    <div class="success message">
+        <c:if test="${not empty successMessage}">
+            ${successMessage}
+        </c:if>
+    </div>
 
-<div class="wrapper">
-    <div class="item">
-        <img src="https://admin.cgon.ru/storage/upload/medialibrary/8854cdeb85cb29fbd8571eede588c539.png" height="50">
-        <h5>Кукуруза</h5>
+    <div class="p-3 mb-2 bg-secondary text-white">Games Workshop Webstore
+        <div class="top-text">
+            <h3>Choose paints to buy</h3>
+        </div>
+
+        <div class="product-card">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-sm">
+                        <div class="card" style="width: 10rem;">
+                            <img class="card-img-top" src="https://www.games-workshop.com/resources/catalog/product/600x620/99189951056_layerUlthuanGrey.svg" alt="Card image cap">
+                            <div class="card-body">
+                                <h4 class="card-title">LAYER</h4>
+                                <h5 class="card-name">Ulthuan Grey</h5>
+                                <p class="card-price">$4.55</p>
+                                <a href="#" class="btn btn-primary">+ add to cart</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm">
+                        <div class="card" style="width: 10rem;">
+                            <img class="card-img-top" src="https://www.games-workshop.com/resources/catalog/product/600x620/99189951104_layerDornYellow.svg" alt="Card image cap" >
+                            <div class="card-body">
+                                <h4 class="card-title">LAYER</h4>
+                                <h5 class="card-name">Dorn Yellow</h5>
+                                <p class="card-price">$4.55</p>
+                                <a href="#" class="btn btn-primary">+ add to cart</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm">
+                        <div class="card" style="width: 10rem;">
+                            <img class="card-img-top" src="https://www.games-workshop.com/resources/catalog/product/600x620/99189951112_layerPhalanxYellow.svg" alt="Card image cap" >
+                            <div class="card-body">
+                                <h4 class="card-title">LAYER</h4>
+                                <h5 class="card-name">Phalanx Yellow</h5>
+                                <p class="card-price">$4.55</p>
+                                <a href="#" class="btn btn-primary">+ add to cart</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm">
+                        <div class="card" style="width: 10rem;">
+                            <img class="card-img-top" src="https://www.games-workshop.com/resources/catalog/product/600x620/99189951002_layerFlashGitzYellow.svg" alt="Card image cap" >
+                            <div class="card-body">
+                                <h4 class="card-title">LAYER</h4>
+                                <h5 class="card-name">Flash Gitz Yellow</h5>
+                                <p class="card-price">$4.55</p>
+                                <a href="#" class="btn btn-primary">+ add to cart</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm">
+                        <div class="card" style="width: 10rem;">
+                            <img class="card-img-top" src="https://www.games-workshop.com/resources/catalog/product/600x620/99189951001_layerYrielYellow.svg" alt="Card image cap" >
+                            <div class="card-body">
+                                <h4 class="card-title">LAYER</h4>
+                                <h5 class="card-name">Yriel Yellow</h5>
+                                <p class="card-price">$4.55</p>
+                                <a href="#" class="btn btn-primary">+ add to cart</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm">
+                        <div class="card" style="width: 10rem;">
+                            <img class="card-img-top" src="https://www.games-workshop.com/resources/catalog/product/600x620/99189951001_layerYrielYellow.svg" alt="Card image cap" >
+                            <div class="card-body">
+                                <h4 class="card-title">LAYER</h4>
+                                <h5 class="card-name">Yriel Yellow</h5>
+                                <p class="card-price">$4.55</p>
+                                <a href="#" class="btn btn-primary">+ add to cart</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm">
+                        <div class="card" style="width: 10rem;">
+                            <img class="card-img-top" src="https://www.games-workshop.com/resources/catalog/product/600x620/99189951109_layerLugganathOrange.svg" alt="Card image cap" >
+                            <div class="card-body">
+                                <h4 class="card-title">LAYER</h4>
+                                <h5 class="card-name">Lugganath Orange</h5>
+                                <p class="card-price">$4.55</p>
+                                <a href="#" class="btn btn-primary">+ add to cart</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
     </div>
-    <div class="item">
-        <img src="https://m.dom-eda.com/uploads/images/catalog/item/86df51de21/c25c94fe96_1000.jpg" height="50">
-        <h5>Яблоко</h5>
-    </div>
-    <div class="item">
-        <img src="https://m.dom-eda.com/uploads/images/catalog/item/53275a4f46/c4f7252f9e_1000.jpg" height="50">
-        <h5>Мандарины</h5>
-    </div>
-    <div class="item">
-        <img src="https://m.dom-eda.com/uploads/images/catalog/item/dfc9a3e974/3cbf3bd41c_1000.jpg" height="50">
-        <h5>Апельсины</h5>
-    </div>
-</div>
+
+    <h3>Product List</h3>
+
+        <div class="product-card">
+            <div class="container">
+                <div class="row">
+
+                    <c:forEach var="product" items="${products}">
+                        <div class="col-sm">
+                            <div class="card" style="width: 10rem;">
+                                <img class="card-img-top" src="${product.image}" alt="Card image cap">
+                                <div class="card-body">
+                                    <h4 class="card-title">LAYER</h4>
+                                    <h5 class="card-name">Ulthuan Grey</h5>
+                                    <p class="card-price">$4.55</p>
+                                    <a href="#" class="btn btn-primary">+ add to cart</a>
+                                </div>
+                            </div>
+                        </div>
+                    </c:forEach>
+
+                </div>
+            </div>
+        </div>
+
 </body>
 </html>

@@ -24,8 +24,9 @@ public class AuthServlet extends HttpServlet {
 
         if (isAuth) {
             //forward to products page
-            RequestDispatcher requestDispatcher = getServletContext().getRequestDispatcher("/items");
-            requestDispatcher.forward(request, response);
+            response.sendRedirect(getServletContext().getContextPath() + "/items");
+//            RequestDispatcher requestDispatcher = getServletContext().getRequestDispatcher("/items.jsp");
+//            requestDispatcher.forward(request, response);
         } else {
             // show login page with incorrect login data
             request.setAttribute("login", login);

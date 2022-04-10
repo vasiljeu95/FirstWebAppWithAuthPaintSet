@@ -9,27 +9,29 @@
         <%@ include file='css/index.css' %>
         <%@ include file='css/bootstrap.min.css' %>
     </style>
-    <link rel="stylesheet" type="text/css" href="css/index.css"/>
+<%--    <link rel="stylesheet" type="text/css" href="css/index.css"/>--%>
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
 </head>
+
 <body>
-<div class="content">
-    <form method="post" action="auth">
-        Login:
-        <br/>
-        <input class="input" type="text" name="login" value="${login}" placeholder="Enter your login">
-        <br/>
-        <br/>
-        Password:
-        <br/>
-        <input class="input" type="text" name="password" value="${password}" placeholder="Enter your password">
-        <br/>
-        <input id="submit" type="submit" value="Log in">
-    </form>
-    <c:if test="${not empty errorMessage}">
-        ${errorMessage}
-    </c:if>
-    <a href="reg">Зарегистрироваться</a>
-</div>
+    <div class="content">
+        <form method="post" action="auth">
+            Login:
+            <br/>
+            <input class="input" type="text" name="login" value="${login}" placeholder="Enter your login">
+            <br/>
+            Password:
+            <br/>
+            <input class="input" type="text" name="password" value="${password}" placeholder="Enter your password">
+            <br/>
+            <input id="submit" type="submit" value="Log in">
+        </form>
+
+        <c:if test="${not empty errorMessage}">
+            ${errorMessage}
+        </c:if>
+
+        <a href="reg">Зарегистрироваться</a>
+    </div>
 </body>
 </html>
