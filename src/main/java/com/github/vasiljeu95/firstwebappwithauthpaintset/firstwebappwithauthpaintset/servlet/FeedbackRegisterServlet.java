@@ -29,9 +29,10 @@ public class FeedbackRegisterServlet extends HttpServlet {
         if (isResult) {
             req.setAttribute("successMessage", "You message successes response!");
 
-            getServletContext().getRequestDispatcher("/items").forward(req, resp);
+//            getServletContext().getRequestDispatcher("/items").forward(req, resp);
+            resp.sendRedirect(getServletContext().getContextPath() + "/items");
         } else {
-            req.setAttribute("errorMessage", "You message NOT successes  Try again!");
+            req.setAttribute("errorMessage", "You message NOT successes. Try again!");
             getServletContext().getRequestDispatcher("/feedback").forward(req, resp);
         }
 
